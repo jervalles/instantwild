@@ -11,6 +11,52 @@ nav {
 	padding: 2px 2px 2px 2px;
 	height: 50px;
 }
+
+/*         Menu Burger          */
+
+#burger {
+  position: relative;
+  width: 43px;
+  height: 32px;
+}
+#burger > input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0; 
+  z-index: 2; 
+}
+#burgerIcon{
+  position: absolute;
+  z-index: 1;
+  padding: 5px 5px 0px 5px ; 
+}
+#burgerIcon > div
+{
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: #cdcdcd;
+  border-radius: 3px;
+}
+#burger > ul {
+  position: absolute;
+  width: 300px;
+  left:-300px;
+  top: 33px;
+  list-style-type: none;
+  padding: 0;
+  background-color : yellowgreen;
+}
+#burger li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+#burger > input:checked ~ ul {
+  left : 0;
+}
+
 nav a {
 	display: flex;
 	align-items: center;
@@ -38,3 +84,4 @@ nav a {
 #search-container img{
 	width: 300%;
 }
+
