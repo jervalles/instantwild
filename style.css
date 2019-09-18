@@ -4,11 +4,11 @@
 }
 
 nav {
-    display: flex;
+  display: flex;
 	align-items: center;
 	justify-content: space-between;
 	background-color: #F76c6c;
-	padding: 2px 2px 2px 2px;
+	
 	height: 50px;
 }
 
@@ -16,8 +16,7 @@ nav {
 
 #burger {
   position: relative;
-  width: 43px;
-  height: 32px;
+  height: 100%;
 }
 #burger > input {
   position: absolute;
@@ -27,34 +26,42 @@ nav {
   opacity: 0; 
   z-index: 2; 
 }
-#burgerIcon{
-  position: absolute;
-  z-index: 1;
-  padding: 5px 5px 0px 5px ; 
+#burgerIcon {
+  margin-top: 14px;
 }
-#burgerIcon > div
-{
-  width: 33px;
+#burgerIcon > div {
+  width: 30px;
   height: 4px;
   margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   background: #cdcdcd;
   border-radius: 3px;
+}
+#burgerIcon > div:last-child {
+  margin-bottom: 0;
 }
 #burger > ul {
   position: absolute;
   width: 300px;
-  left:-300px;
-  top: 33px;
+  height: 100vh;
+  left: -302px;
+  top: 50px;
   list-style-type: none;
   padding: 0;
-  background-color : yellowgreen;
+  background-color : rgb(255, 148, 148);
 }
 #burger li {
-  padding: 10px 0;
+  margin-bottom: 10px;
+  padding-left: 10px;
   font-size: 22px;
+  color: white;
+}
+#burger li:first-child {
+  margin-top: 10px;
 }
 #burger > input:checked ~ ul {
-  left : 0;
+  left : -2px;
 }
 
 nav a {
@@ -77,11 +84,10 @@ nav a {
 }
 
 #search-container button{
-	height: 60%;
 	width: 15%;
 }
 
 #search-container img{
-	width: 300%;
+	width: 62%;
 }
 
