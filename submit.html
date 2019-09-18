@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <title>Instants Wild</title>
         <link rel="stylesheet" href="submit_style.css">
+        <link rel="stylesheet" href="style.css">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     </head>
     <body>
-        <!--<header>
+        <header>
                 <nav>
                     menu burger 
                     <div></div>
@@ -26,7 +27,7 @@
                         <a href="submit.html" title="Submit a post" class="postgifbutton">Submit a post</a>
                     </div> 
                 </nav>
-        </header>-->
+        </header>
         <main>
             <h1>Submit a post : </h1>
 
@@ -46,9 +47,10 @@
                     <input type="file" id="file_content" name="file_content" >
                 </div>
 
-                <div id="categories">
-                    <p>Choose your categories : </p>
+                <p>Choose your categories : </p>
 
+                <div id="categories">
+                    
                     <div>
                         <input type="checkbox" id="dev" name="dev" value="dev" checked>
                         <label for="dev">Dev</label>
@@ -62,18 +64,18 @@
                         <label for="wtf">WTF</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="daily" name="daily" value="daily">
-                        <label for="daily">Dailylife</label>
-                    </div>
-                    <div>
                         <input type="checkbox" id="fail" name="fail" value="fail">
                         <label for="fail">Fail</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="daily" name="daily" value="daily">
+                        <label for="daily">Dailylife</label>
                     </div>
                 </div>
 
                 <div>
-                    <label for="pseudo">Your pseudo : <span>*</span></label>
-                    <input type="text" id="pseudo" name="pseudo" placeholder="Your pseudo goes here" required>
+                    <label for="pseudo">Your username : <span>*</span></label>
+                    <input type="text" id="pseudo" name="pseudo" placeholder="Your username goes here" required>
                 </div>
 
                 <div>
@@ -83,7 +85,7 @@
 
 
                 <div>
-                        <input type="submit" value="Submit" id="submit_button">
+                    <input type="submit" value="Submit" id="submit_button">
                 </div>
                 
             </form>
@@ -91,5 +93,6 @@
         <footer>
 
         </footer>
+        <!--<script src="https://kit.fontawesome.com/38505487fb.js"></script>-->
     </body>
 </html>
