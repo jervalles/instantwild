@@ -8,8 +8,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	background-color: #F76c6c;
-	padding: 2px 2px 2px 2px;
-	height: 50px;
+	margin-bottom: 10px;
 }
 
 /*         Menu Burger          */
@@ -57,31 +56,106 @@ nav {
   left : 0;
 }
 
-nav a {
+/*         Logo          */
+
+#logolink {
 	display: flex;
 	align-items: center;
+	margin-left: 30px;
+	width: 68%;
 }
 
-#search-container {
+/*         Title         */
+
+#h1full{
+	display: none;
+}
+
+#h1reduced{
+	margin-left: 10px;
+	margin-right: 2px;
+	font-size: 100%;
+}
+
+/*         Search         */
+
+form.search-container {
 	height: 100%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: right;
+}
+
+form.search-container input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.search-container button {
+  float: left;
+  width: 34px;
+  height: 42px;
+  padding: 10px;
+  background: #E8DAC8;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search-container button:hover {
+  background: #ee9a4cf0;
+}
+
+form.search-container img {
+  	width: 10px;
+	height: 10px;
+}
+
+form.search-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*         Post GIF Button         */
+
+.buttontest {
+	width: 120px;
+	height: 40px;
+	margin-left: 10px;
 	margin-right: 10px;
-	border-color: black;
-	border: solid;
+ 	background-color: #4CAF50; /* Green */
+	border: none;
+ 	color: white;
+ 	padding: 8px;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	font-size: 12px;
+ 	margin: 4px 10px;
+ 	cursor: pointer;
+ 	border-radius: 4px;
 }
 
-#search-container input{
-	height: 80%;
-}
 
-#search-container button{
-	height: 60%;
-	width: 15%;
-}
+@media screen and (min-width: 600px)
+{
+/*         Title's Media Query         */
+	#h1full{
+		display: initial;
+		margin-left: 10px;
+		margin-right: 2px;
+		font-size: 100%;
+	}
 
-#search-container img{
-	width: 300%;
+	#h1reduced{
+		display: none;
+	}
 }
-
