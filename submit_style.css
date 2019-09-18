@@ -12,13 +12,13 @@
 
 :root {
     --main-color: #F76c6c;
-    --second-color: ;
+    --second-color: #feeeee;
 }
 
-
 /* form style */ 
+
 body{
-    background-color: #feeeee;
+    background-color: var(--second-color);
 }
 
 h1, h2{
@@ -27,7 +27,7 @@ h1, h2{
 
 main{
     width: 80%;
-    margin: auto;
+    margin: 0 auto 1em auto;
     padding: 1rem;
     font-size: 1.2rem;
     background-color: white;
@@ -35,40 +35,42 @@ main{
     box-shadow: 0px 6px 5px darkgrey; 
 }
 
-h1{
+main h1{
     margin: 1.2rem;
     text-align: center;
     font-size: 1.3rem;
 }
 
-form {
+main form {
    display: flex;
    flex-direction: column; 
 }
 
-form>div{
+main form>div{
     display: flex;
     flex-direction: column;
     margin-top: 0.6rem;
     padding: 0.4rem;
-
 }
 
 div label {
     padding: 0.4rem;
 }
 
-div p {
-    margin-top: 0.5rem;
+#content p {
     padding: 0.4rem;
 }
 
 #content label{
     font-size: 0.9rem;
-    margin-top: 0.4rem;
+    margin: 0.4rem 0 0 0.2rem;
 }
 
-form span {
+#file_content{
+    padding-right: 0;
+}
+
+main form span {
     color: var(--main-color);
 }
 
@@ -76,18 +78,29 @@ form span {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: flex-start;
+    margin-top: 0;
+    max-width: 410px;
+    align-self: center;
 }
 
-#categories p {
-     width: 100%;
+div~p {
+    padding: 0.4rem;
+   margin-left: 0.2rem;
 }
 
 #categories div{
     display: flex;
     flex-direction: row;
-    width: 33%;
+
+    margin-left: 0.4rem;
 }
+
+main div input{
+    padding: 0.3rem;
+}
+
+/*    Button     */
 
 #submit_button{
     background-color:var(--main-color);
@@ -95,7 +108,10 @@ form span {
     font-weight: 600;
     padding: 0.8rem;
     border-radius: 12px;
+    border: solid transparent 1px;
     width: 50%;
     margin: auto;
     box-shadow: 0px 4px 4px darkgrey;
 }
+
+
