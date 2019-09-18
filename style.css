@@ -1,10 +1,165 @@
-.imgposition{
-    display: flex;
-    justify-content: center;
-    width: 95%;
+* {
+	margin: 0;
+	box-sizing: border-box;
 }
-article{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+nav {
+  display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F76c6c;
+	margin-bottom: 10px;
+}
+
+/*         Menu Burger          */
+
+#burger {
+  position: relative;
+  height: 100%;
+}
+#burger > input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0; 
+  z-index: 2; 
+}
+
+#burgerIcon > div {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #cdcdcd;
+  border-radius: 3px;
+}
+#burgerIcon > div:last-child {
+  margin-bottom: 0;
+}
+#burger > ul {
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  left: -302px;
+  top: 35px;
+  list-style-type: none;
+  padding: 0;
+  background-color : rgb(255, 148, 148);
+}
+#burger li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  color: white;
+}
+#burger li:first-child {
+  margin-top: 10px;
+}
+#burger > input:checked ~ ul {
+  left : -2px;
+}
+
+/*         Logo          */
+
+#logolink {
+	display: flex;
+	align-items: center;
+	width: 68%;
+}
+
+/*         Title         */
+
+#h1full{
+	display: none;
+}
+
+#h1reduced{
+	margin-left: 10px;
+	margin-right: 2px;
+	font-size: 100%;
+}
+
+/*         Search         */
+
+form.search-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+form.search-container input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.search-container button {
+  float: left;
+  width: 34px;
+  height: 42px;
+  padding: 10px;
+  background: #E8DAC8;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search-container button:hover {
+  background: #ee9a4cf0;
+}
+
+form.search-container img {
+  	width: 10px;
+	height: 10px;
+}
+
+form.search-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*         Post GIF Button         */
+
+.buttontest {
+	width: 120px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+ 	background-color: #4CAF50; /* Green */
+	border: none;
+ 	color: white;
+ 	padding: 12px;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	font-size: 12px;
+ 	margin: 4px 10px;
+ 	cursor: pointer;
+ 	border-radius: 4px;
+}
+
+
+@media screen and (min-width: 600px)
+{
+/*         Title's Media Query         */
+	#h1full{
+		display: initial;
+		margin-left: 10px;
+		margin-right: 2px;
+		font-size: 100%;
+	}
+
+	#h1reduced{
+		display: none;
+	}
 }

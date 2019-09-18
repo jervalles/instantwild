@@ -4,27 +4,40 @@
         <meta charset="utf-8">
         <title>Instants Wild</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
                 <nav>
                     <!-- menu burger -->
-                    <div></div>
+                    <div id="burger">
+                            <input type="checkbox" />
+                            <div id="burgerIcon">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <ul>
+                                <li>Dev</li>
+                                <li>Data</li>
+                                <li>WTF</li>
+                                <li>Daily life</li>
+                                <li>Fail</li>
+                            </ul>
+                        </div>
                     <!-- Instant Wild Logo and Title -->
-                    <a href="index.html" title="Homepage">
-                        <img src="logoinstantwild.png" alt="Logo Instant Wild"/>
-                        <h1>Instants Wild</h1>
+                    <a href="index.html" id="logolink" title="Homepage">
+                        <img src="https://via.placeholder.com/50x50" alt="Logo Instant Wild">
+                        <h1 id="h1reduced">IW</h1>
+                        <h1 id="h1full">Instant Wilder</h1>
                     </a>
                     <!-- Search Bar -->
-                    <div id="search-container">
-                        <form action="/action_page.php">
-                            <input type="text" placeholder="#Lille" name="search">
-                            <button type="submit" name="search submition"><i class="fa fa-search"></i></button>
-                        </form>
-                        <!-- Git Post Buttom -->
-                        <a href="submit.html" title="Submit a post" class="postgifbutton">Submit a post</a>
-                    </div> 
+                    <form class="search-container" action="/action_page.php" style="margin:auto;max-width:300px">
+                        <input type="text" placeholder="#Lille" name="search2">
+                        <button type="submit"><img src="./images/icon_loupe.png"> 
+                        </button>
+                    </form>
+                     <!-- Git Post Buttom -->
+                    <a class="buttontest" href="submit.html">Submit</a>
                 </nav>
         </header>
         <!-- Partie de l'instant wild du jour-->
