@@ -1,0 +1,12 @@
+.imgposition{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.vote {
+}
