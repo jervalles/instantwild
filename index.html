@@ -31,7 +31,7 @@
                         <h1 id="h1full">Instant Wilder</h1>
                     </a>
                     <!-- Search Bar -->
-                    <form class="search-container" action="/action_page.php" style="margin:auto;max-width:300px">
+                    <form class="search-container" action="/action_page.php">
                         <input type="text" placeholder="#Lille" name="search2">
                         <button type="submit"><img src="./images/icon_loupe.png"> 
                         </button>
@@ -42,26 +42,28 @@
         </header>
         <!-- Partie de l'instant wild du jour-->
         <section>
-                <h2>L'instant wild du jour :</h2>
-                <h3>Quand tu as besoin d'une pause méditation après Git:</h3>
-                <div class="imgposition">
-                    <img src="photos/meditation.jpg" title ="Dormir à la wild" alt="Jean-Roch qui dort"/>
-                </div>
-                <p>#dev #Lille #WCS</p>
-                <p>18/09/2019</p>
-                <article>
-                    <button class="vote" type="button">
+            <h2>L'instant wild du jour :</h2>
+                <div class="container">
+                    <h3>Quand tu as besoin d'une pause méditation après Git:</h3>                    
+                        <div class="imgposition">
+                            <img src="photos/meditation.jpg" title ="personne qui dort" alt="personne qui dort"/>
+                        </div>
+                            <p>#dev #Lille #WCS</p>
+                            <p>18/09/2019</p>
+                    <article>
+                        <button class="vote" type="button">
                         Wild
-                    </button>
-                    <button class="vote" type="button">
+                        </button>
+                        <button class="vote" type="button">
                         Not Wild
-                    </button>
-                </article>
-            </section>
+                        </button>
+                    </article>
+                </div>
+        </section>
             <hr>
         <section>
-        <!-- bouton de selection-->
-            <h2 id="lesderniersposts">Les derniers posts :</h2>
+        <!-- select button-->
+            <h2>Les derniers posts :</h2>
             <select id="selectform">
                 <option value="">Sort by</option>
                 <option value="Wildest">Wildest</option>
@@ -70,17 +72,22 @@
                 <option value="Oldest">Oldest</option>
                 <option value="Random">Random</option>
             </select>
-            <!-- Partie avec le contenu-->
-            <h3>Quand la team se réunit face à un problème de code:</h3>
-            <div class="imgposition">
-                <img src="photos/projet.jpg" title="les projets de groupe" alt="Une équipe face à problème"/>
-            </div>
-            <p>#Lille #dev #WCS</p>
-            <p>18/09/2019</p>
-            <article id="postcontent">
-                <button class="vote" type="button">Wild</button>
-                <button class="vote" type="button">Not Wild</button>
-            </article>
+            <!-- contenu part-->
+
+        <div class="container">
+                <h3>Quand la team se réunit face à un problème de code:</h3>
+                    <div class="imgposition">
+                         <img src="photos/projet.jpg" title="les projets de groupe" alt="Une équipe face à problème"/>
+                    </div>
+                <p>#Lille #dev #WCS</p>
+                <p>18/09/2019</p>
+                <article id="postcontent">
+                    <button class="vote" type="button">Wild</button>
+                    <button class="vote" type="button">Not Wild</button>
+                </article>
+        </div>
+
+        <div class="container">
                 <h3>Je ne dois pas renverser mon cafe sur la moquette:</h3>
             <div class="imgposition">
                 <video src="videos/prendre_cafe.mp4" controls loop muted autoplay>
@@ -92,6 +99,9 @@
                 <button class="vote" type="button">Wild</button>
                 <button class="vote" type="button">Not Wild</button>
             </article>
+        </div>
+
+        <div class="container">
             <h3>Prendre des risques en ne fermant son ordi:</h3>
             <div class="imgposition">
                 <img src="photos/tchoupi.jpg" alt= "video de tchoupi" title="tchoupi qui passe en boucle"/>
@@ -101,7 +111,10 @@
             <article id="postcontent">
                 <button class="vote" type="button">Wild</button>
                 <button class="vote" type="button">Not Wild</button>
-            </article>
+        </article>
+        </div> 
+
+        <div class="container">
             <h3>Au bout de deux semaines...</h3>
             <div class="imgposition">
                 <img src="photos/dormir.jpg" alt="personne qui dort" title="faire une pause sieste"/>
@@ -112,16 +125,23 @@
                 <button class="vote" type="button">Wild</button>
                 <button class="vote" type="button">Not Wild</button>
             </article>
-            <h3>Qui a renversé le café?</h3>
-            <div class="imgposition">
-                <img src="photos/cafe.jpg" alt="du cafe sur la porte" title="cafe qui a été renversé"/>
-            </div>
-            <p>#dev #Lille #WCS</p>
-            <p>18/09/2019</p>
+        </div>
+
+
+        <div class="container">
+                <h3>Qui a renversé le café?</h3>
+                <div class="imgposition">
+                    <img src="photos/cafe.jpg" alt="du cafe sur la porte" title="cafe qui a été renversé"/>
+                </div>
+                <p>#dev #Lille #WCS</p>
+                <p>18/09/2019</p>
             <article id="postcontent">
                 <button class="vote" type="button">Wild</button>
                 <button class="vote" type="button">Not Wild</button>
             </article>
+        </div>  
+
+        <div class="container">
             <h3>Mort pour la wild:</h3>
             <div class="imgposition">
                 <img src="photos/mort.jpg" alt="wilder qui fait sa sieste" title="Valentin qui dort"/>
@@ -131,7 +151,8 @@
             <article id="postcontent">
                 <button class="vote" type="button">Wild</button>
                 <button class="vote" type="button">Not Wild</button>
-            </article>
+        </article>
+         </div>  
         </section>   
 
         <footer>
