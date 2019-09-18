@@ -1,0 +1,101 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Variables */
+
+:root {
+    --main-color: #F76c6c;
+    --second-color: ;
+}
+
+
+/* form style */ 
+body{
+    background-color: #feeeee;
+}
+
+h1, h2{
+    font-weight: 800;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 5px darkgrey; 
+}
+
+h1{
+    margin: 1.2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+form {
+   display: flex;
+   flex-direction: column; 
+}
+
+form>div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.6rem;
+    padding: 0.4rem;
+
+}
+
+div label {
+    padding: 0.4rem;
+}
+
+div p {
+    margin-top: 0.5rem;
+    padding: 0.4rem;
+}
+
+#content label{
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+}
+
+form span {
+    color: var(--main-color);
+}
+
+#categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#categories p {
+     width: 100%;
+}
+
+#categories div{
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+}
+
+#submit_button{
+    background-color:var(--main-color);
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8rem;
+    border-radius: 12px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 4px darkgrey;
+}
