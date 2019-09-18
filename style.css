@@ -17,6 +17,7 @@ nav {
   position: relative;
   height: 100%;
 }
+
 #burger > input {
   position: absolute;
   height: 100%;
@@ -35,9 +36,11 @@ nav {
   background: #cdcdcd;
   border-radius: 3px;
 }
+
 #burgerIcon > div:last-child {
   margin-bottom: 0;
 }
+
 #burger > ul {
   position: absolute;
   width: 300px;
@@ -48,15 +51,18 @@ nav {
   padding: 0;
   background-color : rgb(255, 148, 148);
 }
+
 #burger li {
   margin-bottom: 10px;
   padding-left: 10px;
   font-size: 22px;
   color: white;
 }
+
 #burger li:first-child {
   margin-top: 10px;
 }
+
 #burger > input:checked ~ ul {
   left : -2px;
 }
@@ -71,6 +77,10 @@ nav {
 
 /*         Title         */
 
+h1 {
+	font-family: "arial";
+}
+
 #h1full{
 	display: none;
 }
@@ -78,7 +88,12 @@ nav {
 #h1reduced{
 	margin-left: 10px;
 	margin-right: 2px;
-	font-size: 100%;
+	font-size: 200%;
+}
+
+#logolink {
+	text-decoration: none;
+	color: #f2f2f2;
 }
 
 /*         Search         */
@@ -156,10 +171,11 @@ form.search-container::after {
 		display: initial;
 		margin-left: 10px;
 		margin-right: 2px;
-		font-size: 100%;
+		font-size: 140%;
 	}
 
 	#h1reduced{
 		display: none;
 	}
+
 }
