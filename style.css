@@ -215,13 +215,31 @@ article {
   /*          Logo cliquable            */
 .logoloic{
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
   width: 40%;
 }
+.container button:first-child{ 
+  border-color:#cffa93 ;
+  background-color:#cffa93 ;
+}
+.container button:last-child{ 
+  border-color: #ffa7b4;
+  background-color: #ffa7b4;
+}
+.container button:first-child:active{ 
+  border-color:#bce187 ;
+  background-color:#bce187;
+}
+.container button:last-child:active{ 
+  border-color: #ec4e66;
+  background-color: #f16b80;
+}
+
 
 .vote {
   margin-top: 5%;
   width: 50%;
+  border-radius: 10%;
 }
 
 .logoloic :first-child{
