@@ -175,8 +175,21 @@ article {
   justify-content: space-around;
   align-items: center;
 }
+  
+
+.logoloic{
+  display: flex;
+  justify-content: space-around;
+}
+
 .vote {
   width: 40%;
+  background-color: white;
+  border: none;
+}
+.vote :hover{
+  background-color: #F76c6c;         
+  cursor: pointer;
 }
 #selectform {
   margin-left: 65%;
