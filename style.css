@@ -204,7 +204,6 @@ form.search-container::after {
 .imgposition {
   display: flex;
   justify-content: center;
-
   padding: 5%;
 }
 
@@ -213,17 +212,18 @@ article {
   justify-content: space-around;
   align-items: center;
 }
-  
+  /*          Logo cliquable            */
 .logoloic{
   display: flex;
   justify-content: space-between ;
-  width: 40%;  
+  width: 40%;
 }
 
 .vote {
   margin-top: 5%;
   width: 50%;
 }
+
 .logoloic :first-child{
   margin-right: 10%;
 }
