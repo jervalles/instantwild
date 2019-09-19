@@ -177,9 +177,10 @@ article {
 }
 .vote {
   width: 40%;
+  margin-top: 5%;
 }
 #selectform {
-  margin-left: 65%;
+  margin-left: 75%;
   margin-bottom: 5%;
   margin-top: 2%;
 }
@@ -191,6 +192,8 @@ article {
   border: 1px solid darkgrey;
   padding: 5%; 
   border-radius: 12px;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 section {
   width: 80%;
@@ -204,10 +207,8 @@ hr {
   margin-bottom: 5%;
 }
 h2 {
-  margin-bottom: 4%;
-  margin-top: 5%;
-margin: 0;
-box-sizing: border-box;
+  margin-bottom: 0;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 600px)
@@ -224,4 +225,31 @@ box-sizing: border-box;
 		display: none;
 	}
 
+}
+
+@media screen and (min-width: 960px)
+{
+/*        Desktop Media Query           */
+  .container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 13%;
+  }
+  .imgposition {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+  }
+  h2 {
+    margin-left: 12%;
+    margin-top: 2%;
+  }
+  #selectform {
+    margin-left: 75%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
