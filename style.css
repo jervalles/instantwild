@@ -21,145 +21,146 @@ body {
   background-color: var(--second-color);
 }
 
-h1, h2{
+h1,
+h2 {
   font-weight: 800;
 }
 
-h2{
+h2 {
   font-size: 1.3rem;
 }
 
 nav {
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: #F76c6c;
-margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F76c6c;
+  margin-bottom: 10px;
 }
 
 /*         Menu Burger          */
 
 #burger {
-position: relative;
-height: 100%;
+  position: relative;
+  height: 100%;
 }
 
-#burger > input {
-position: absolute;
-height: 100%;
-width: 100%;
-margin: 0;
-opacity: 0; 
-z-index: 2; 
+#burger>input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  z-index: 2;
 }
 
-#burgerIcon > div {
-width: 30px;
-height: 4px;
-margin-bottom: 5px;
-margin-left: 10px;
-margin-right: 10px;
-background: #cdcdcd;
-border-radius: 3px;
+#burgerIcon>div {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #cdcdcd;
+  border-radius: 3px;
 }
 
-#burgerIcon > div:last-child {
-margin-bottom: 0;
+#burgerIcon>div:last-child {
+  margin-bottom: 0;
 }
 
-#burger > ul {
-position: absolute;
-width: 300px;
-height: 100vh;
-left: -302px;
-top: 35px;
-list-style-type: none;
-padding: 0;
-background-color : rgb(255, 148, 148);
+#burger>ul {
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  left: -302px;
+  top: 35px;
+  list-style-type: none;
+  padding: 0;
+  background-color: rgb(255, 148, 148);
 }
 
 #burger li {
-margin-bottom: 10px;
-padding-left: 10px;
-font-size: 22px;
-color: white;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  color: white;
 }
 
 #burger li:first-child {
-margin-top: 10px;
+  margin-top: 10px;
 }
 
-#burger > input:checked ~ ul {
-left : -2px;
+#burger>input:checked~ul {
+  left: -2px;
 }
 
 /*         Logo          */
 
 #logolink {
-display: flex;
-align-items: center;
-width: 68%;
+  display: flex;
+  align-items: center;
+  width: 68%;
 }
 
-#logolink img{
-	width: 30px;
+#logolink img {
+  width: 30px;
 }
 
 /*         Title         */
 
 h1 {
-	font-family: "arial";
+  font-family: "arial";
 }
 
-#h1full{
-display: none;
+#h1full {
+  display: none;
 }
 
-#h1reduced{
-	margin-left: 10px;
-	margin-right: 2px;
-	font-size: 200%;
+#h1reduced {
+  margin-left: 10px;
+  margin-right: 2px;
+  font-size: 200%;
 }
 
 #logolink {
-	text-decoration: none;
-	color: #f2f2f2;
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
 /*         Search         */
 
 form.search-container {
-height: 100%;
-width: 78%;
-display: flex;
-align-items: center;
-justify-content: right;
+  height: 100%;
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
 form.search-container input[type=text] {
-padding: 10px;
-font-size: 17px;
-border: 1px solid grey;
-float: left;
-width: 70%;
-background: #f1f1f1;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
 }
 
 form.search-container button {
-float: left;
-width: 34px;
-height: 42px;
-padding: 10px;
-background: #E8DAC8;
-color: white;
-font-size: 17px;
-border: 1px solid grey;
-border-left: none;
-cursor: pointer;
+  float: left;
+  width: 34px;
+  height: 42px;
+  padding: 10px;
+  background: #E8DAC8;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
 }
 
 form.search-container button:hover {
-background: #ee9a4cf0;
+  background: #ee9a4cf0;
 }
 
 form.search-container img {
@@ -168,106 +169,115 @@ form.search-container img {
 }
 
 form.search-container::after {
-content: "";
-clear: both;
-display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*         Post GIF Button         */
 
 .buttonpostgif {
-	display: flex;
-	width: 88px;
-	height: 40px;
- 	background-color: rgb(206, 55, 55); /* Green */
-	border: none;
+  display: flex;
+  width: 88px;
+  height: 40px;
+  background-color: rgb(206, 55, 55);
+  /* Green */
+  border: none;
   color: white;
- 	padding: 4px;
- 	align-items: center;
- 	text-decoration: none;
- 	font-size: 12px;
- 	margin: 4px 10px;
- 	cursor: pointer;
- 	border-radius: 4px;
+  padding: 4px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius: 4px;
 
 }
 
 .buttonpostgif img {
-	width: 30px;
+  width: 30px;
   height: 30px;
   margin-left: 4px;
 }
 
 /*          Main Page             */
 .imgposition {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 
-padding: 5%;
+  padding: 5%;
 }
+
 article {
-display: flex;
-justify-content: space-around;
-align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
 .vote {
-width: 40%;
+  width: 40%;
 }
+
 #selectform {
-margin-left: 65%;
-margin-bottom: 5%;
-margin-top: 2%;
+  margin-left: 65%;
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
+
 .posttitle {
-margin-left: 10%;
+  margin-left: 10%;
 }
+
 .container {
-box-shadow: 0px 4px 4px darkgrey;
-border: 1px solid darkgrey;
-padding: 5%; 
-border-radius: 12px;
-background-color: white;
+  box-shadow: 0px 4px 4px darkgrey;
+  border: 1px solid darkgrey;
+  padding: 5%;
+  border-radius: 12px;
+  background-color: white;
 }
+
 section {
-width: 80%;
-margin: auto;
-border-radius: 12px;
+  width: 80%;
+  margin: auto;
+  border-radius: 12px;
 }
+
 hr {
-width: 80%;
-margin: auto;
-margin-top: 5%;
-margin-bottom: 5%;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
 h2 {
-margin-bottom: 4%;
-margin-top: 5%;
-margin: 0;
-box-sizing: border-box;
+  margin-bottom: 4%;
+  margin-top: 5%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 600px){
-/*         Title's Media Query         */
+@media screen and (min-width: 600px) {
+  /*         Title's Media Query         */
 
-#h1full{
-  display: initial;
-  margin-left: 10px;
-  margin-right: 2px;
-  font-size: 100%;
+  #h1full {
+    display: initial;
+    margin-left: 10px;
+    margin-right: 2px;
+    font-size: 1.6rem;
+  }
+
+  #h1reduced {
+    display: none;
+  }
 }
 
-#h1reduced{
-  display: none;
-}
-}
+@media screen and (min-width: 960px) {
 
-@media screen and (min-width: 960px){
-
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
 
-  h3{
+  h3 {
     font-size: 1.3rem;
   }
 }
