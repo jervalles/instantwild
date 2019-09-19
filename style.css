@@ -213,7 +213,6 @@ form.search-container::after {
 .imgposition {
   display: flex;
   justify-content: center;
-
   padding: 5%;
 }
 
@@ -222,14 +221,25 @@ article {
   justify-content: space-around;
   align-items: center;
 }
-
-.vote {
+  /*          Logo cliquable            */
+.logoloic{
+  display: flex;
+  justify-content: space-between ;
   width: 40%;
 }
 
+.vote {
+  margin-top: 5%;
+  width: 50%;
+}
+
+.logoloic :first-child{
+  margin-right: 10%;
+}
+
 #selectform {
-  margin-left: 65%;
-  margin-bottom: 5%;
+  
+  margin-bottom: 2%;
   margin-top: 2%;
 }
 
@@ -242,6 +252,19 @@ article {
   border: 1px solid darkgrey;
   padding: 5%;
   border-radius: 12px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  background-color: white;
+}
+#contselect {
+  border: 1px solid darkgrey;
+  box-shadow: 0px 4px 4px darkgrey;
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   background-color: white;
 }
 
@@ -257,12 +280,18 @@ hr {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+/*  Tags et dates */ 
+div p:first-of-type{
+  margin-top: 0.9rem;
+}
+div>p{
+  font-size: 0.9rem;
+}
 
 h2 {
+  margin-bottom: 0;
   margin-bottom: 4%;
   margin-top: 5%;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 @media screen and (min-width: 600px) {
@@ -280,13 +309,50 @@ h2 {
   }
 }
 
-@media screen and (min-width: 960px) {
 
+@media screen and (min-width: 960px)
+{
+/*        Desktop Media Query           */
+  .container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 13%;
+  }
+  .imgposition {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+  }
   h2 {
+    margin: 0 auto 1.5rem 0;
     font-size: 1.5rem;
   }
-
+  #contselect {
+    border: 1px solid darkgrey;
+    box-shadow: 0px 4px 4px darkgrey;
+    border-radius: 12px;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 13%;
+    align-items: center;
+  }
+  #contselect h2 {
+    margin: 5% 0 4% 0;
+  }
+  #selectform {
+    max-height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   h3 {
     font-size: 1.3rem;
+  }
+  .logoloic{
+    width: 40%;
   }
 }
