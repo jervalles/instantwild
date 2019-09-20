@@ -8,12 +8,15 @@ main{
     border-radius: 12px;
     box-shadow: 0px 6px 5px darkgrey; 
     background-color: #fff;
+    margin-top: 1.2rem;
+    border: 1px solid darkgrey;
 }
 
 main h1{
     margin: 1.2rem;
     text-align: center;
     font-size: 1.3rem;
+    font-family: 'Manjari', sans-serif;
 }
 
 main form {
@@ -44,6 +47,7 @@ main div input{
 
 #content p {
     padding: 0.4rem;
+
 }
 
 #content label{
@@ -63,34 +67,71 @@ main div input{
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 0;
-    max-width: 410px;
     align-self: center;
 }
 
 div~p {
     padding: 0.4rem;
-   margin-left: 0.2rem;
+    margin-left: 0.4rem;
+    margin-top: 0.9rem;
 }
 
 #categories div{
     display: flex;
     flex-direction: row;
-
     margin-left: 0.4rem;
 }
 
 /*    Button     */
 
 #submit_button{
-    background-color:var(--main-color);
+    background-color: rgb(206, 55, 55);
     color: #fff;
     font-weight: 600;
     padding: 0.8rem;
     border-radius: 12px;
     border: solid transparent 1px;
-    width: 50%;
+    width: 40%;
     margin: auto;
     box-shadow: 0px 4px 4px darkgrey;
 }
 
+#required{
+    color: var(--main-color);
+    text-align: right;
+    margin-top: 1rem;
+}
 
+@media screen and (min-width: 960px){
+
+    main{
+        padding: 2.5rem;
+        width: 70%;
+        margin-top: 3.5rem;
+    }
+
+    main h1{
+        font-size: 1.5rem;
+    }
+
+    main form{
+        width: 80%;
+        margin: 3rem auto 0 auto;
+    }
+
+    main div > p{
+        font-size: 1rem;
+    }
+
+    #categories{
+        justify-content: center;
+    }
+    #categories div{
+        padding-right: 1rem;
+    }
+
+    #submit_button{
+        max-width: 20%;
+    }
+   
+}
