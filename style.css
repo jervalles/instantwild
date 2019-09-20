@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 16px;
   font-family: 'Manjari', sans-serif;
-  letter-spacing: O.O5rem;
+  letter-spacing: 1px;
 }
 
 /* Variables */
@@ -65,25 +65,24 @@ nav {
 }
 
 #burger>ul {
+  transition-property: all;
+  transition-duration: 1s;
   position: absolute;
   width: 300px;
   height: 100vh;
   left: -302px;
   top: 35px;
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0 0 0;
   background-color: rgb(255, 148, 148);
 }
 
 #burger li {
-  margin-bottom: 10px;
-  padding-left: 10px;
-  font-size: 22px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 1.5rem;
   color: white;
-}
-
-#burger li:first-child {
-  margin-top: 10px;
+  cursor: pointer;
 }
 
 #burger>input:checked~ul {
@@ -106,6 +105,8 @@ nav {
 
 h1 {
   font-family: "arial";
+}#burger li:first-child {
+  margin-top: 10px;
 }
 
 #h1full {
@@ -132,14 +133,18 @@ form.search-container {
   align-items: center;
   justify-content: right;
 }
-
+#burger li:first-child {
+  margin-top: 10px;
+}
 form.search-container input[type=text] {
   padding: 13px 10px 8px 10px;
   font-size: 17px;
   border: 1px solid grey;
   float: left;
   width: 70%;
-  background: #f1f1f1;
+  background: #f1f1f1;#burger li:first-child {
+    margin-top: 10px;
+  }
 }
 
 form.search-container button {
@@ -174,7 +179,7 @@ form.search-container::after {
 
 .buttonpostgif {
   display: flex;
-  width: 90px;
+  width: 110px;
   height: 40px;
   background-color: rgb(206, 55, 55);
   /* Green */
@@ -215,11 +220,11 @@ article {
   justify-content: space-around;
   align-items: center;
 }
-  /*          Logo cliquable            */
+  /*          Logo click            */
 .logoloic{
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 55%;
 }
 .container button:first-child{ 
   border-color:#cffa93 ;
@@ -273,7 +278,9 @@ article {
   box-shadow: 0px 4px 4px darkgrey;
   border-radius: 12px;
   width: 100%;
-  display: flex;
+  display: flex;#burger li:first-child {
+    margin-top: 10px;
+  }
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -326,6 +333,7 @@ h2 {
   #h1reduced {
     display: none;
   }
+
 }
 
 
