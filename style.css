@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 16px;
   font-family: 'Manjari', sans-serif;
-  letter-spacing: .1rem;
+  letter-spacing: 1px;
   scroll-behavior: smooth;
 }
 
@@ -70,25 +70,23 @@ nav {
 }
 
 #burger>ul {
+  transition-property: all;
+  transition-duration: 0.7s;
   position: absolute;
-  width: 300px;
-  height: 100vh;
-  left: -302px;
+  width: 150px;
+  left: -152px;
   top: 35px;
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0 0 0;
   background-color: rgb(255, 148, 148);
 }
 
 #burger li {
-  margin-bottom: 10px;
-  padding-left: 10px;
-  font-size: 22px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 1.5rem;
   color: white;
-}
-
-#burger li:first-child {
-  margin-top: 10px;
+  cursor: pointer;
 }
 
 #burger>input:checked~ul {
@@ -111,6 +109,8 @@ nav {
 
 h1 {
   font-family: "arial";
+}#burger li:first-child {
+  margin-top: 10px;
 }
 
 #h1full {
@@ -137,7 +137,9 @@ form.search-container {
   align-items: center;
   justify-content: right;
 }
-
+#burger li:first-child {
+  margin-top: 10px;
+}
 form.search-container input[type=text] {
   padding: 13px 10px 8px 10px;
   font-size: 17px;
@@ -222,11 +224,11 @@ article {
   justify-content: space-around;
   align-items: center;
 }
-  /*          Logo cliquable            */
+  /*          Logo click            */
 .logoloic{
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 55%;
 }
 .container button:first-child{ 
   border-color:#cffa93 ;
@@ -338,6 +340,7 @@ h2 {
   #h1reduced {
     display: none;
   }
+
 }
 
 
