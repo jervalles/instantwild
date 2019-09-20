@@ -8,7 +8,7 @@ main{
     border-radius: 12px;
     box-shadow: 0px 6px 5px darkgrey; 
     background-color: #fff;
-    margin-top: 5%;
+    margin-top: 1.2rem;
     border: 1px solid darkgrey;
 }
 
@@ -106,6 +106,21 @@ div~p {
 
     main{
         padding: 2.5rem;
+        width: 70%;
+        margin-top: 3.5rem;
+    }
+
+    main h1{
+        font-size: 1.5rem;
+    }
+
+    main form{
+        width: 80%;
+        margin: 3rem auto 0 auto;
+    }
+
+    main div > p{
+        font-size: 1rem;
     }
 
     #categories{
@@ -118,8 +133,5 @@ div~p {
     #submit_button{
         max-width: 20%;
     }
-
-    main div > p{
-        font-size: 1rem;
-    }
+   
 }
