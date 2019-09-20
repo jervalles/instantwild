@@ -210,11 +210,11 @@ form.search-container::after {
 
 /*          Main Page             */
 .imgposition {
-  display: flex;
-  justify-content: center;
   padding: 5%;
 }
-
+.imgposition img { 
+  max-height: 90vh;
+}
 article {
   display: flex;
   justify-content: space-around;
