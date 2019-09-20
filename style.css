@@ -221,11 +221,11 @@ article {
   justify-content: space-around;
   align-items: center;
 }
-  /*          Logo cliquable            */
+  /*          Logo click            */
 .logoloic{
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 55%;
 }
 .container button:first-child{ 
   border-color:#cffa93 ;
@@ -325,6 +325,7 @@ h2 {
   #h1reduced {
     display: none;
   }
+
 }
 
 
