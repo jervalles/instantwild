@@ -7,7 +7,8 @@
   font-weight: 400;
   font-size: 16px;
   font-family: 'Manjari', sans-serif;
-  letter-spacing: O.O5rem;
+  letter-spacing: .1rem;
+  scroll-behavior: smooth;
 }
 
 /* Variables */
@@ -131,7 +132,7 @@ h1 {
 
 form.search-container {
   height: 100%;
-  width: 78%;
+  width: 62%;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -142,7 +143,7 @@ form.search-container input[type=text] {
   font-size: 17px;
   border: 1px solid grey;
   float: left;
-  width: 70%;
+  width: 80%;
   background: #f1f1f1;
 }
 
@@ -178,7 +179,7 @@ form.search-container::after {
 
 .buttonpostgif {
   display: flex;
-  width: 90px;
+  width: 110px;
   height: 40px;
   background-color: rgb(206, 55, 55);
   /* Green */
@@ -312,6 +313,18 @@ h2 {
   margin-top: 5%;
 }
 
+/*  Go Top Button */ 
+.gotopbutton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.gotopbutton img {
+  width: 50px;
+  height: 50px;
+}
+
 @media screen and (min-width: 600px) {
   /*         Title's Media Query         */
 
@@ -373,4 +386,11 @@ h2 {
   .logoloic{
     width: 40%;
   }
+
+  /*  Go Top Button */ 
+  .gotopbutton img {
+    width: 70px;
+    height: 70px;
+  }
+
 }
