@@ -8,6 +8,7 @@
   font-size: 16px;
   font-family: 'Manjari', sans-serif;
   letter-spacing: 1px;
+  scroll-behavior: smooth;
 }
 
 /* Variables */
@@ -66,11 +67,10 @@ nav {
 
 #burger>ul {
   transition-property: all;
-  transition-duration: 1s;
+  transition-duration: 0.7s;
   position: absolute;
-  width: 300px;
-  height: 100vh;
-  left: -302px;
+  width: 150px;
+  left: -152px;
   top: 35px;
   list-style-type: none;
   padding: 10px 0 0 0;
@@ -128,7 +128,7 @@ h1 {
 
 form.search-container {
   height: 100%;
-  width: 78%;
+  width: 62%;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -141,10 +141,8 @@ form.search-container input[type=text] {
   font-size: 17px;
   border: 1px solid grey;
   float: left;
-  width: 70%;
-  background: #f1f1f1;#burger li:first-child {
-    margin-top: 10px;
-  }
+  width: 80%;
+  background: #f1f1f1;
 }
 
 form.search-container button {
@@ -278,9 +276,7 @@ article {
   box-shadow: 0px 4px 4px darkgrey;
   border-radius: 12px;
   width: 100%;
-  display: flex;#burger li:first-child {
-    margin-top: 10px;
-  }
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -318,6 +314,18 @@ h2 {
 
 #contselect h2 {
   margin: 5% 0 4% 0;
+}
+
+/*  Go Top Button */ 
+.gotopbutton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.gotopbutton img {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (min-width: 600px) {
@@ -380,4 +388,11 @@ h2 {
   .logoloic{
     width: 40%;
   }
+
+  /*  Go Top Button */ 
+  .gotopbutton img {
+    width: 70px;
+    height: 70px;
+  }
+
 }
