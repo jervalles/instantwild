@@ -1,5 +1,3 @@
-/* Reset */
-
 * {
   padding: 0;
   margin: 0;
@@ -11,8 +9,6 @@
   scroll-behavior: smooth;
 }
 
-/* Variables */
-
 :root {
   --main-color: #F76c6c;
   --second-color: #feeeee;
@@ -22,19 +18,6 @@ body {
   background-color: var(--second-color);
 }
 
-h1,
-h2 {
-  font-weight: 800;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #F76c6c;
-  margin-bottom: 10px;
-  height: 48px;
-}
 
 /*         Menu Burger          */
 
@@ -208,37 +191,63 @@ form.search-container::after {
   background-color: #ee8d4cef;
 }
 
-/*          Main Page             */
-.imgposition {
-  display: flex;
-  justify-content: center;
-  padding: 5%;
+article>img, article>video{
+    width:500px;
+    max-width: 100%;
+    /*margin: auto;*/
 }
 
-article {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+h1,
+h2 {
+  font-weight: 800;
 }
-  /*          Logo click            */
+
+article{
+    width: 80%;
+    background-color: #fff;
+    margin: 0.5rem auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article>h2, article>h3, article>p{
+    align-self: flex-start;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F76c6c;
+  margin-bottom: 10px;
+  height: 48px;
+}
+
+
+/* Button */ 
+
 .logoloic{
   display: flex;
   justify-content: space-between;
   width: 55%;
 }
-.container button:first-child{ 
+article button:first-child{ 
   border-color:#cffa93 ;
   background-color:#cffa93 ;
 }
-.container button:last-child{ 
+article button:last-child{ 
   border-color: #ffa7b4;
   background-color: #ffa7b4;
 }
-.container button:first-child:active{ 
+article button:first-child:active{ 
   border-color:#bce187 ;
   background-color:#bce187;
 }
-.container button:last-child:active{ 
+article button:last-child:active{ 
   border-color: #ec4e66;
   background-color: #f16b80;
 }
@@ -251,174 +260,4 @@ article {
 
 .logoloic :first-child{
   margin-right: 10%;
-}
-
-#selectform {
-  
-  margin-bottom: 2%;
-  margin-top: 2%;
-}
-
-.posttitle {
-  margin-left: 10%;
-}
-
-.container {
-  box-shadow: 0px 4px 4px darkgrey;
-  border: 1px solid darkgrey;
-  padding: 5%;
-  border-radius: 12px;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  background-color: white;
-}
-
-#contselect {
-  border: 1px solid darkgrey;
-  box-shadow: 0px 4px 4px darkgrey;
-  border-radius: 12px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: white;
-}
-
-section {
-  width: 80%;
-  margin: auto;
-  border-radius: 12px;
-}
-
-hr {
-  width: 80%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-/*  Tags et dates */ 
-
-section div p:first-of-type{
-  margin-top: 0.9rem;
-}
- section div>p{
-  font-size: 0.9rem;
-}
-
-
-h2 {
-  margin-bottom: 4%;
-  font-size: 1.3rem;
-
-}
-
-#contselect h2 {
-  margin: 5% 0 4% 0;
-}
-
-/*  Go Top Button */ 
-.gotopbutton {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-.gotopbutton img {
-  width: 50px;
-  height: 50px;
-}
-
-@media screen and (min-width: 600px) {
-  /*         Title's Media Query         */
-
-  #h1full {
-    display: initial;
-    margin-left: 10px;
-    margin-right: 2px;
-    font-size: 1.6rem;
-  }
-
-  #h1reduced {
-    display: none;
-  }
-
-}
-
-
-@media screen and (min-width: 960px)
-{
-/*        Desktop Media Query           */
-
-
-  nav {
-    height: 62px;
-  }
-
-  #burgerIcon {
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  #burger>ul {
-    top: 62px;
-  }
-
-  #logolink img {
-    width: 46px;
-  }
-
-  #h1full {
-    margin-left: 20px;
-  }
-
-  .container {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 13%;
-  }
-  .imgposition {
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    margin-left: 15%;
-  }
-  h2 {
-    margin: 0 auto 1.5rem 0;
-    font-size: 1.5rem;
-  }
-  #contselect {
-    border: 1px solid darkgrey;
-    box-shadow: 0px 4px 4px darkgrey;
-    border-radius: 12px;
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 13%;
-    align-items: center;
-  }
-
-  #selectform {
-    max-height: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  h3 {
-    font-size: 1.3rem;
-  }
-  .logoloic{
-    width: 40%;
-  }
-
-  /*  Go Top Button */ 
-  .gotopbutton img {
-    width: 70px;
-    height: 70px;
-  }
-
 }

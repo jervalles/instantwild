@@ -1,275 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Instants Wild, where you can share your wildest moments.">
-    <title>Instants Wild</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <!-- menu burger -->
-            <div id="burger">
-                <input type="checkbox" />
-                <div id="burgerIcon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Keat </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <!-- menu burger -->
+                <div id="burger">
+                    <input type="checkbox" />
+                    <div id="burgerIcon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul>
+                        <li>Dev</li>
+                        <li>Data</li>
+                        <li>WTF</li>
+                        <li>Daily life</li>
+                        <li>Fail</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>Dev</li>
-                    <li>Data</li>
-                    <li>WTF</li>
-                    <li>Daily life</li>
-                    <li>Fail</li>
-                </ul>
-            </div>
-            <!-- Instant Wild Logo and Title -->
-            <a href="index.html" id="logolink" title="Homepage">
-                <img src="./images/logo.png" alt="Logo Instant Wild">
-                <h1 id="h1reduced">IW</h1>
-                <h1 id="h1full">Instants Wild</h1>
-            </a>
-            <!-- Search Bar -->
-            <form class="search-container" action="">
-                <input type="text" placeholder="#Lille" name="search2">
-                <button type="submit"><img src="./images/icon_loupe.png">
-                </button>
-            </form>
-            <!-- Git Post Buttom -->
-            <a class="buttonpostgif" href="submit.html">
-                <p>Submit</p><img src="./images/rondplus.png">
-            </a>
-        </nav>
-    </header>
-    <!-- Partie de l'instant wild du jour-->
-    <section>
-        <div class="container">
-            <h2>Wild instant of the day :</h2>
-            <h3>When you need a break after Git merge :</h3>
-            <div class="imgposition">
-                <img src="photos/meditation.jpg" title="sleeping wilder" alt="slepping wilder" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
+                <!-- Instant Wild Logo and Title -->
+                <a href="index.html" id="logolink" title="Homepage">
+                    <img src="./images/logo.png" alt="Logo Instant Wild">
+                    <h1 id="h1reduced">IW</h1>
+                    <h1 id="h1full">Instants Wild</h1>
+                </a>
+                <!-- Search Bar -->
+                <form class="search-container" action="">
+                    <input type="text" placeholder="#Lille" name="search2">
+                    <button type="submit"><img src="./images/icon_loupe.png">
                     </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
+                </form>
+                <!-- Git Post Buttom -->
+                <a class="buttonpostgif" href="submit.html">
+                    <p>Submit</p><img src="./images/rondplus.png">
+                </a>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                <article>
+                    <h2>Wild instant of the day :</h2>
+                    <h3>When you need a break after Git merge :</h3>
+                    <img src="photos/resized/meditation.jpg" title="sleeping wilder" alt="slepping wilder">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>  
+            </section>
+            
+            <section>
+               
+                <div id="contselect">
+                    <h2> Latest posts :</h2>
+                    <select id="selectform">
+                        <option value="">Sort by</option>
+                        <option value="Wildest">Wildest</option>
+                        <option value="Notsowild">Not so wild</option>
+                        <option value="Most recent">Most recent</option>
+                        <option value="Oldest">Oldest</option>
+                        <option value="Random">Random</option>
+                    </select>
                 </div>
-            </article>
-            <p>#dev #Lille #WCS</p>
-            <p>18/09/2019</p>
-        </div>
-    </section>
-    <hr>
-    <section>
-        <!-- select button-->
-    <div id="contselect">
-        <h2> Latest posts :</h2>
-        <select id="selectform">
-            <option value="">Sort by</option>
-            <option value="Wildest">Wildest</option>
-            <option value="Notsowild">Not so wild</option>
-            <option value="Most recent">Most recent</option>
-            <option value="Oldest">Oldest</option>
-            <option value="Random">Random</option>
-        </select>
-    </div>
-        <!-- contenu part-->
-
-        <div class="container">
-            <h3>When you have a problem on your code :</h3>
-            <div class="imgposition">
-                <img src="photos/projet.jpg" title="Group in front of a computeur" alt="A team in front of a computeur" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#Lille #dev #WCS</p>
-            <p>18/09/2019</p>
-        </div>
-
-        <div class="container">
-            <h3>When you need coffee to survive :</h3>
-            <div class="imgposition">
-                <video src="videos/prendre_cafe.mp4" controls loop muted autoplay>
-                </video>
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#Lille #dev #WCS</p>
-            <p>18/09/2019</p>
-        </div>
-
-        <div class="container">
-            <h3>Once again struck by Tchoupi:</h3>
-            <div class="imgposition">
-                <img src="photos/tchoupi.jpg" alt="tchoupi video" title="tchoupi video" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#Lille #dev #WCS</p>
-            <p>18/09/2019</p>
-        </div>
-
-        <div class="container">
-            <h3>Two weeks, first project...</h3>
-            <div class="imgposition">
-                <img src="photos/dormir.jpg" alt="slepping wilder" title="slepping wilder" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#dev #Lille #WCS</p>
-            <p>18/09/2019</p>
-        </div>
-        <div class="container">
-            <h3>Dead for the wild :</h3>
-            <div class="imgposition">
-                <img src="photos/mort.jpg" alt="Sleeping wilder" title="Valentin slepping" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#dev #Lille #WCS</p>
-            <p>18/09/2019</p>
-        </div>
-        <div class="container">
-            <h3>Error 404:</h3>
-            <div class="imgposition">
-                <img src="photos/eror.jpg" alt="slepping wilder" title="slepping wilder" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#dev #Lille #WCS</p>
-            <p>18/09/2019</p>
-        </div>
-        <div class="container">
-            <h3>PHP or JS that is the question: </h3>
-            <div class="imgposition">
-                <img src="photos/choix.jpg" alt="wilders need to do a choice" title="Loic and Benjamin make a presentation" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#dev #Lille #WCS</p>
-            <p>20/09/2019</p>
-        </div>
-        <div class="container">
-            <h3>The come back:</h3>
-            <div class="imgposition">
-                <img src="photos/leretour.jpg" alt="thoupi" title="tchoupi" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#dev #Lille #WCS</p>
-            <p>20/09/2019</p>
-        </div>
-        <div class="container">
-        <h3>The truth about dev junior:</h3>
-            <div class="imgposition">
-                <img src="photos/true.jpg" alt="dev junoir picture" title="Loic and benji present dev junoir reality" />
-            </div>
-            <article>
-                <div class="logoloic">
-                    <button class="vote" type="button">
-                        <img src="images/loicok.svg"/> Wild
-                    </button>
-                    <button class="vote" type="button">
-                        <img src="images/loicnotok.svg"/>Not Wild
-                    </button>
-                </div>
-            </article>
-            <p>#dev #Lille #WCS</p>
-            <p>20/09/2019</p>
-        </div>
-        <div class="container">
-        <h3>Sleeping beauty after a git push:</h3>
-        <div class="imgposition">
-            <img src="photos/slepping.jpg" alt="Wilder sleeping" title="wilder sleeping" />
-        </div>
-        <article>
-            <div class="logoloic">
-                <button class="vote" type="button">
-                    <img src="images/loicok.svg"/> Wild
-                </button>
-                <button class="vote" type="button">
-                    <img src="images/loicnotok.svg"/>Not Wild
-                </button>
-            </div>
-        </article>
-        <p>#dev #Lille #WCS</p>
-        <p>20/09/2019</p>
-    </div>
-    </section>
-    <a class="gotopbutton" href="#"><img src="./images/backtotop.png"></a>
-</body>
+                
+                
+                <article>
+                    <h3>When you have a problem on your code :</h3>
+                    <img src="photos/resized/projet.jpg" title="Group in front of a computer" alt="A team in front of a computer">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>When you need coffee to survive :</h3>
+                    <video src="videos/prendre_cafe.mp4" controls loop muted autoplay></video>
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>Once again struck by Tchoupi :</h3>
+                    <img src="photos/resized/tchoupi.jpg" alt="tchoupi video" title="tchoupi video">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>Two weeks, first project...</h3>
+                    <img src="photos/resized/dormir.jpg" alt="slepping wilder" title="slepping wilder" >
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>Dead for the wild :</h3>
+                    <img src="photos/resized/mort.jpg" alt="Sleeping wilder" title="Valentin slepping">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>Error 404 :</h3>
+                    <img src="photos/resized/eror.jpg" alt="slepping wilder" title="slepping wilder">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>PHP or JS that is the question: </h3>
+                    <img src="photos/resized/choix.jpg" alt="wilders need to do a choice" title="Loic and Benjamin make a presentation">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>The come back:</h3>
+                    <img src="photos/resized/leretour.jpg" alt="thoupi" title="tchoupi">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>The truth about dev junior:</h3>
+                    <img src="photos/resized/true.jpg" alt="dev junior picture" title="Loic and benji present dev junior reality">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3>Sleeping beauty after a git push :</h3>
+                    <img src="photos/resized/slepping.jpg" alt="Wilder sleeping" title="wilder sleeping">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                <!--
+                <article>
+                    <h3></h3>
+                    <img src="" alt="">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3></h3>
+                    <img src="" alt="">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+                <article>
+                    <h3></h3>
+                    <img src="" alt="">
+                    <div class="logoloic">
+                        <button class="vote" type="button">
+                            <img src="images/loicok.svg"/> Wild
+                        </button>
+                        <button class="vote" type="button">
+                            <img src="images/loicnotok.svg"/>Not Wild
+                        </button>
+                    </div>
+                    <p>#dev #Lille #WCS</p>
+                    <p>18/09/2019</p>
+                </article>
+                
+               -->
+                
+                
+            </section>
+        </main>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
 </html>
