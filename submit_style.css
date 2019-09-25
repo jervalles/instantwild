@@ -43,7 +43,7 @@ main div input{
     padding: 0.3rem;
 }
 
-/*         Content         */
+/*         Content input         */
 
 #content p {
     padding: 0.4rem;
@@ -59,7 +59,7 @@ main div input{
     padding-right: 0;
 }
 
-/*       Categories        */
+/*       Categories input       */
 
 #categories{
     display: flex;
@@ -77,12 +77,11 @@ div~p {
 }
 
 #categories div{
-    display: flex;
     flex-direction: row;
     margin-left: 0.4rem;
 }
 
-/*    Button     */
+/*    Submit Button     */
 
 #submit_button{
     background-color: rgb(206, 55, 55);
@@ -133,5 +132,4 @@ div~p {
     #submit_button{
         max-width: 20%;
     }
-   
 }

@@ -1,0 +1,111 @@
+
+/*			Page content			*/ 
+
+section h2{
+	background-color: #fff;
+	width: 80%;
+	margin: auto;
+	padding: 0.8rem;
+	border-radius: 10px;
+}
+
+article {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.705);
+    margin: 0.5rem auto 1.9rem auto;
+    padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px grey;
+}
+
+article>h3{
+	align-self: flex-start;
+	margin-bottom: 0.9rem;
+}
+
+article>img, article>video{
+    width:500px;
+    max-width: 100%;
+}
+
+article .postInfos {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem;
+}
+
+hr{
+	width: 80%;
+	margin: 1.5rem auto;
+}
+
+/*			Button				*/ 
+
+.vote{
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+.vote button {
+	margin-top: 5%;
+	width: 50%;
+	border-radius: 10%;
+  }
+.vote button:first-child { 
+  border-color:#cffa93 ;
+  background-color:#cffa93 ;
+}
+.vote button:last-child { 
+  border-color: #ffa7b4;
+  background-color: #ffa7b4;
+}
+.vote button:first-child:active { 
+  border-color:#bce187 ;
+  background-color:#bce187;
+}
+.vote button:last-child:active { 
+  border-color: #ec4e66;
+  background-color: #f16b80;
+}
+.vote button:first-child {
+  margin-right: 10%;
+}
+
+/*			Go Top Button			*/ 
+.gotopbutton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.gotopbutton img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 960px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

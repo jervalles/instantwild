@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Manjari', sans-serif;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Variables */ 
+  
+  :root {
+    --main-color: #F76c6c;
+    --second-color: #feeeee;
+  }
+  
+  body {
+    background-color: var(--second-color);
+  }
+  
+  h1,
+  h2 {
+    font-weight: 800;
+  }
+  
