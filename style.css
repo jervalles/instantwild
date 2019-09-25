@@ -9,6 +9,8 @@
   scroll-behavior: smooth;
 }
 
+/* Variables */ 
+
 :root {
   --main-color: #F76c6c;
   --second-color: #feeeee;
@@ -17,6 +19,23 @@
 body {
   background-color: var(--second-color);
 }
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+/*            nav             */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F76c6c;
+  margin-bottom: 10px;
+  height: 48px;
+}
+
 
 
 /*         Menu Burger          */
@@ -212,19 +231,8 @@ article{
     align-items: center;
 }
 
-article>h2, article>h3, article>p{
+article>h2, article>h3{
     align-self: flex-start;
-}
-
-
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #F76c6c;
-  margin-bottom: 10px;
-  height: 48px;
 }
 
 
@@ -251,13 +259,11 @@ article button:last-child:active{
   border-color: #ec4e66;
   background-color: #f16b80;
 }
-
 .vote {
   margin-top: 5%;
   width: 50%;
   border-radius: 10%;
 }
-
 .logoloic :first-child{
   margin-right: 10%;
 }
