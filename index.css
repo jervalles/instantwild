@@ -6,7 +6,8 @@ section h2{
 	width: 80%;
 	margin: auto;
 	padding: 0.8rem;
-	border-radius: 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
 }
 
 article {
@@ -23,7 +24,8 @@ article {
 
 article>h3{
 	align-self: flex-start;
-	margin-bottom: 0.9rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.2rem;
 }
 
 article>img, article>video{
@@ -36,6 +38,7 @@ article .postInfos {
 	display: flex;
 	justify-content: space-between;
   padding: 0.2rem 0;
+  margin: 0.3rem;
   font-size: 0.8rem;
   max-width: 500px;
 }
