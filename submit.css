@@ -8,8 +8,9 @@ main{
     border-radius: 12px;
     box-shadow: 0px 6px 5px darkgrey; 
     background-color: #fff;
-    margin-top: 1.2rem;
-
+    padding-top: 1.2rem;
+    position: relative;
+    top: 80px; 
 }
 
 #closebuttonconteneur {
@@ -120,10 +121,13 @@ div~p {
 
 @media screen and (min-width: 960px){
 
+    body {
+       
+    }
+
     main{
         padding: 2.5rem;
         width: 70%;
-        margin-top: 3.5rem;
     }
     
     #closebuttonconteneur a {
