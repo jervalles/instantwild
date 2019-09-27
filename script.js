@@ -1,35 +1,35 @@
 
-function setRandomNumbers () {return Math.floor(Math.random()*500)}
+function setRandomNumbers () {return Math.floor(Math.random()*500)};
 
-const voteButtons = document.getElementsByClassName('voteButton');
+const voteButtons = document.querySelectorAll('article button');
 
 for (let btn of voteButtons) {
 
     /* Random starting number for counters */
-    btn.getElementsByTagName('span')[0].textContent = setRandomNumbers();
+    btn.querySelector('span').textContent = setRandomNumbers();
 
-    btn.addEventListener('click', event => {
+    btn.addEventListener('click', (event) => {
     
-        const target = event.target;
+        const target = event.currentTarget;
+        console.log(target);
         
-        let hasVoted = target.classList.contains("true");
-        let span = target.getElementsByTagName('span')[0];
-        let counter = parseInt(span.textContent);
+        let span = target.querySelector('span');
         
+        
+        // let counter = span.textContent;
+        let hasVoted = target.classList.contains("hasVoted");
+
         if (!hasVoted){
-            counter++;
-            target.classList.add('true');
+            span.textContent ++ ; 
+            target.classList.add('hasVoted');
         }  else{
-            counter--;
-            target.classList.remove('true');
+            span.textContent -- ;
+            target.classList.remove('hasVoted');
         }  
-        span.textContent = counter;
         
-        console.log("-----");
-        console.log(hasVoted);
-        console.log(counter);
+        
     });
-}
+};
    
     
     
