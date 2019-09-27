@@ -7,7 +7,9 @@
         <title>Instants Wild</title>
         <link rel="stylesheet" href="general.css">
         <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="submit.css">
         <link rel="stylesheet" href="index.css">
+
         <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
     </head>
     
@@ -44,9 +46,9 @@
                     </button>
                 </form>
                 <!-- Git Post Buttom -->
-                <a class="buttonpostgif" href="submit.html">
+                <button class="buttonpostgif" >
                     <p>Submit</p><img src="./images/rondplus.png">
-                </a>
+                </button>
             </nav>
         </header>
         
@@ -249,7 +251,70 @@
                 </article>
                 
             </section>
+
+            <section class="modal">
+                <div class="modal_content">
+                    <div id="closebuttonconteneur">
+                        <img src="./images/croix.png" alt="">
+                    </div>
+                    <h1>Submit a post </h1>
+                           
+                    <form action="*" method="post">
+                        <div>
+                            <label for="title">Title <span>*</span></label>
+                            <input type="text" id="title" name="title" placeholder="Type your title here" required>
+                        </div>
+                        
+                        <div id="content">
+                        
+                            <p>Choose your content <span>*</span></p>
+                        
+                            <label for="url_content">Enter an url :</label>
+                            <input type="url" id="url_content" name="url_content" placeholder="http://wild_img_hosting.com/">
+                        
+                            <label for="file_content">Or upload a file :</label>
+                            <input type="file" id="file_content" name="file_content">
+                        </div>
+                        
+                        <p>Choose your categories : </p>
+                        
+                        <div id="categories">
+                        
+                            <div>
+                                <input type="checkbox" id="dev" name="dev" value="dev" checked>
+                                <label for="dev">Dev</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="data" name="data" value="data">
+                                <label for="data">Data</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="wtf" name="wtf" value="wtf">
+                                <label for="wtf">WTF</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fail" name="fail" value="fail">
+                                <label for="fail">Fail</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="daily" name="daily" value="daily">
+                                <label for="daily">Dailylife</label>
+                            </div>
+                        </div>
+                        
+                        <p id="required">* required</p>
+                        
+                        <div>
+                            <input type="submit" value="Submit" id="submit_button">
+                        </div>  
+                    </form>
+                </div>
+            </section>
+
+
+
             <a class="gotopbutton" href="#"><img src="./images/backtotop.png"></a>
         </main>
+        <script src="modal.js"></script>
     </body>
 </html>

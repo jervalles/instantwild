@@ -1,16 +1,40 @@
-/* form style */ 
+                /* Modal style */ 
 
-main{
-    width: 80%;
-    margin: 0 auto 1em auto;
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: 12px;
-    box-shadow: 0px 6px 5px darkgrey; 
-    background-color: #fff;
-    margin-top: 1.2rem;
 
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
+
+.show_modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+                /* Style Modal Content */
+
+.modal_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+}
+
+                /* Style Close Button */
 
 #closebuttonconteneur {
     display: flex;
@@ -18,49 +42,55 @@ main{
     width: 100%; 
 }
 
-#closebuttonconteneur a {
+#closebuttonconteneur img{
     width: 16px;
     height: 16px;
 }
-
+/* 
 #closebuttonconteneur img {
     width: 100%;
     height: 100%;
-}
+} */
 
-main h1{
+.modal_content h1{
     margin: 1.2rem;
     margin-top:-13px;
     text-align: center;
     font-size: 1.3rem;
     font-family: 'Manjari', sans-serif;
 }
-  
-main form {
-   display: flex;
-   flex-direction: column; 
+
+                /* Style form modal content */ 
+
+.modal_content form {
+    display: flex;
+    flex-direction: column; 
 }
 
-main form>div{
+.modal_content form>div{
     display: flex;
     flex-direction: column;
     margin-top: 0.6rem;
     padding: 0.4rem;
 }
 
-main div label {
+.modal_content div label {
     padding: 0.4rem;
 }
 
-main form span {
+.modal_content form span {
     color: var(--main-color);
 }
 
-main div input{
+.modal_content div input{
     padding: 0.3rem;
 }
 
-/*         Content input         */
+.modal_content form span, #required {
+    color: var(--main-color);
+}
+
+                /* Content input */
 
 #content p {
     padding: 0.4rem;
@@ -76,15 +106,14 @@ main div input{
     padding-right: 0;
 }
 
-/*       Categories input       */
+                /* Categories input */
 
 #categories{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 0;
-    align-self: center;
+    margin: 0.6rem auto;
 }
 
 div~p {
@@ -98,7 +127,7 @@ div~p {
     margin-left: 0.4rem;
 }
 
-/*    Submit Button     */
+                /* Submit Button */
 
 #submit_button{
     background-color: rgb(206, 55, 55);
@@ -113,17 +142,17 @@ div~p {
 }
 
 #required{
-    color: var(--main-color);
     text-align: right;
     margin-top: 1rem;
+    font-size: 0.9rem;
 }
+
 
 @media screen and (min-width: 960px){
 
-    main{
+    .modal_content{
         padding: 2.5rem;
-        width: 70%;
-        margin-top: 3.5rem;
+        width: 55%;
     }
     
     #closebuttonconteneur a {
@@ -131,27 +160,21 @@ div~p {
         height: 24px;
     }
 
-    main h1{
+    .modal_content h1{
         font-size: 1.5rem;
     }
 
-    main form{
-        width: 80%;
+    .modal_content form{
+        width: 90%;
         margin: 3rem auto 0 auto;
+        font-size: 1.2rem;
     }
-
-    main div > p{
-        font-size: 1rem;
-    }
-
-    #categories{
-        justify-content: center;
-    }
+    
     #categories div{
         padding-right: 1rem;
     }
 
     #submit_button{
         max-width: 20%;
-    }
+    } 
 }
