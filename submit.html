@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to Instants Wild, where you can share your wildest moments.">
     <title>Instants Wild</title>
-    <link rel="stylesheet" href="submit_style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="submit.css">
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
 </head>
 
@@ -48,9 +49,26 @@
             </a>
         </nav>
     </header>
+        <!-- Desktop Menu -->
+        <section class="leftMenuSection">
+                <div>
+                        <ul>
+                            <li>Sort by</li>
+                            <li>Wildest</li>
+                            <li>Not so wild</li>
+                            <li>Most recent</li>
+                            <li>Oldest</li>
+                            <li>Random</li>
+                        </ul>
+                </div>
+            </section>
     <main>
+    
+        <div id="closebuttonconteneur">
+            <a href="index.html"><img src="./images/croix.png" alt=""></a>
+        </div>
         <h1>Submit a post </h1>
-
+       
         <form action="*" method="post">
             <div>
                 <label for="title">Title <span>*</span></label>
@@ -92,16 +110,6 @@
                     <input type="checkbox" id="daily" name="daily" value="daily">
                     <label for="daily">Dailylife</label>
                 </div>
-            </div>
-
-            <div>
-                <label for="username">Your username <span>*</span></label>
-                <input type="text" id="username" name="username" placeholder="Your username goes here" required>
-            </div>
-
-            <div>
-                <label for="mail">Your email</label>
-                <input type="email" id="mail" name="mail" placeholder="wilder@wild.com">
             </div>
 
             <p id="required">* required</p>
