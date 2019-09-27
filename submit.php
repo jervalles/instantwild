@@ -31,7 +31,7 @@
                 </ul>
             </div>
             <!-- Instant Wild Logo and Title -->
-            <a href="index.html" id="logolink" title="Homepage">
+            <a href="index.php" id="logolink" title="Homepage">
                 <img src="./images/logo.png" alt="Logo Instant Wild">
                 <h1 id="h1reduced">IW</h1>
                 <h1 id="h1full">Instants Wild</h1>
