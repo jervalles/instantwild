@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
-        <title>Instants Wild</title>
-        <link rel="stylesheet" href="general.css">
-        <link rel="stylesheet" href="nav.css">
-        <link rel="stylesheet" href="submit.css">
-        <link rel="stylesheet" href="index.css">
+<?php
+include ('header.html');
+include ('codephp/data.php');
+?>
 
-        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-    </head>
-    
     <body>
         <header>
             <nav>
@@ -96,12 +88,17 @@
             <section>
                 
                 <h2> Latest posts :</h2>
-          
+                <?php
+
+                foreach ($wildPost as $tittle => $contenu)
+                {
+
+                ?>
                 <article>
-                    <h3>When you have a problem on your code :</h3>
-                    <img src="photos/resized/projet.jpg" title="Group in front of a computer" alt="A team in front of a computer">
+                    <h3><?=$tittle?></h3>
+                    <img src="<?=$contenu[0]?>" title="<?=$contenu[1]?>" alt="<?=$contenu[2]?>">
                     <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
+                        <p><?=$contenu[3]?></p><p><?=$contenu[4]?></p>
                     </div>
                     <div class="vote">
                         <button type="button">
@@ -112,7 +109,9 @@
                         </button>
                     </div>
                 </article>
-                
+                <?php
+                }
+                ?>
                 <article>
                     <h3>When you need coffee to survive :</h3>
                     <video src="videos/prendre_cafe.mp4" controls loop muted autoplay></video>
@@ -128,141 +127,6 @@
                         </button>
                     </div>
                 </article>
-                
-                <article>
-                    <h3>Once again struck by Tchoupi :</h3>
-                    <img src="photos/resized/tchoupi.jpg" alt="tchoupi video" title="tchoupi video">
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-
-                </article>
-                
-                <article>
-                    <h3>Two weeks, first project...</h3>
-                    <img src="photos/resized/dormir.jpg" alt="slepping wilder" title="slepping wilder" >
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-
-                </article>
-                
-                <article>
-                    <h3>Dead for the wild :</h3>
-                    <img src="photos/resized/mort.jpg" alt="Sleeping wilder" title="Valentin slepping">
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-
-                </article>
-                
-                <article>
-                    <h3>Error 404 :</h3>
-                    <img src="photos/resized/eror.jpg" alt="slepping wilder" title="slepping wilder">
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-
-                </article>
-                
-                <article>
-                    <h3>PHP or JS that is the question: </h3>
-                    <img src="photos/resized/choix.jpg" alt="wilders need to do a choice" title="Loic and Benjamin make a presentation">
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-                </article>
-                
-                <article>
-                    <h3>The come back:</h3>
-                    <img src="photos/resized/leretour.jpg" alt="thoupi" title="tchoupi">
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-
-                </article>
-                
-                <article>
-                    <h3>The truth about dev junior:</h3>
-                    <img src="photos/resized/true.jpg" alt="dev junior picture" title="Loic and benji present dev junior reality">
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-                </article>
-                
-                <article>
-                    <h3>Sleeping beauty after a git push :</h3>
-                    <img src="photos/resized/slepping.jpg" alt="Wilder sleeping" title="wilder sleeping">
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-                </article>
-                
-            </section>
 
             <section class="modal">
                 <div class="modal_content">
