@@ -18,7 +18,7 @@ function toggleModal() {
 trigger.addEventListener('click', toggleModal);
 closeBtn.addEventListener('click', toggleModal);
 
-window.addEventListener('click', event =>{
+document.addEventListener('click', event =>{
     if (event.target === modal) {
         toggleModal();
     }
