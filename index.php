@@ -17,7 +17,6 @@ include ('codephp/data.php');
                         <div></div>
                     </div>
                     <ul>
-                        <li>Sort by</li>
                         <li>Wildest</li>
                         <li>Not so wild</li>
                         <li>Most recent</li>
@@ -26,7 +25,7 @@ include ('codephp/data.php');
                     </ul>
                 </div>
                 <!-- Instant Wild Logo and Title -->
-                <a href="index.html" id="logolink" title="Homepage">
+                <a href="index.php" id="logolink" title="Homepage">
                     <img src="./images/logo.png" alt="Logo Instant Wild">
                     <h1 id="h1reduced">IW</h1>
                     <h1 id="h1full">Instants Wild</h1>
@@ -59,9 +58,7 @@ include ('codephp/data.php');
             </section>
             <section>
 
-                
                 <h2>Wild instant of the day :</h2>
-
 
                 <article>
                     
@@ -112,22 +109,7 @@ include ('codephp/data.php');
                 <?php
                 }
                 ?>
-                <article>
-                    <h3>When you need coffee to survive :</h3>
-                    <video src="videos/prendre_cafe.mp4" controls loop muted autoplay></video>
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-                </article>
-
+                
             <section class="modal">
                 <div class="modal_content">
                     <div id="closebuttonconteneur">
@@ -191,6 +173,7 @@ include ('codephp/data.php');
 
             <a class="gotopbutton" href="#"><img src="./images/backtotop.png"></a>
         </main>
+        <script src="random.js"></script>
         <script src="modal.js"></script>
         <script src="gotopbutton.js"></script>
         <script src="voteButton.js"></script>
