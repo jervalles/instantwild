@@ -3,6 +3,7 @@
 <?php
 include ('header.html');
 include ('codephp/data.php');
+require_once ('codephp/form.php');
 ?>
 
     <body>
@@ -61,7 +62,6 @@ include ('codephp/data.php');
                 <h2>Wild instant of the day :</h2>
 
                 <article>
-                    
                     <h3>When you need a break after Git merge :</h3>
                     <img src="photos/resized/meditation.jpg" title="sleeping wilder" alt="slepping wilder">
                     <div class='postInfos'>
@@ -120,7 +120,8 @@ include ('codephp/data.php');
                     <form action="*" method="post">
                         <div>
                             <label for="title">Title <span>*</span></label>
-                            <input type="text" id="title" name="title" placeholder="Type your title here" required>
+                            <input type="text" id="title" name="title" placeholder="Type your title here">
+                            <?=$formErrors['title']?>
                         </div>
                         
                         <div id="content">
@@ -129,9 +130,12 @@ include ('codephp/data.php');
                         
                             <label for="url_content">Enter an url :</label>
                             <input type="url" id="url_content" name="url_content" placeholder="http://wild_img_hosting.com/">
-                        
+                            <?=$formErrors['url_content']?>
+
+
                             <label for="file_content">Or upload a file :</label>
                             <input type="file" id="file_content" name="file_content">
+                            <?=$formErrors['file_content']?>
                         </div>
                         
                         <p>Choose your categories : </p>
