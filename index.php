@@ -3,6 +3,7 @@
 <?php
 include ('header.html');
 include ('codephp/data.php');
+require_once ('codephp/form.php');
 ?>
 
     <body>
@@ -17,7 +18,6 @@ include ('codephp/data.php');
                         <div></div>
                     </div>
                     <ul>
-                        <li>Sort by</li>
                         <li>Wildest</li>
                         <li>Not so wild</li>
                         <li>Most recent</li>
@@ -66,7 +66,6 @@ include ('codephp/data.php');
                 <h2>Wild instant of the day :</h2>
 
                 <article>
-                    
                     <h3>When you need a break after Git merge :</h3>
                     <img src="photos/resized/meditation.jpg" title="sleeping wilder" alt="slepping wilder">
                     <div class='postInfos'>
@@ -114,22 +113,7 @@ include ('codephp/data.php');
                 <?php
                 }
                 ?>
-                <article>
-                    <h3>When you need coffee to survive :</h3>
-                    <video src="videos/prendre_cafe.mp4" controls loop muted autoplay></video>
-                    <div class='postInfos'>
-                        <p>#dev #Lille #WCS</p><p>18/09/2019</p>
-                    </div>
-                    <div class="vote">
-                        <button type="button">
-                            <img src="images/wild.png"/>  <p>Wild</p> <span>0</span>
-                        </button>
-                        <button type="button">
-                            <span>0</span> <p>Not Wild</p> <img src="images/notwild.png"/>    
-                        </button>
-                    </div>
-                </article>
-
+                
             <section class="modal">
                 <div class="modal_content">
                     <div id="closebuttonconteneur">
@@ -140,7 +124,8 @@ include ('codephp/data.php');
                     <form action="*" method="post">
                         <div>
                             <label for="title">Title <span>*</span></label>
-                            <input type="text" id="title" name="title" placeholder="Type your title here" required>
+                            <input type="text" id="title" name="title" placeholder="Type your title here">
+                            <?=$formErrors['title']?>
                         </div>
                         
                         <div id="content">
@@ -149,9 +134,12 @@ include ('codephp/data.php');
                         
                             <label for="url_content">Enter an url :</label>
                             <input type="url" id="url_content" name="url_content" placeholder="http://wild_img_hosting.com/">
-                        
+                            <?=$formErrors['url_content']?>
+
+
                             <label for="file_content">Or upload a file :</label>
                             <input type="file" id="file_content" name="file_content">
+                            <?=$formErrors['file_content']?>
                         </div>
                         
                         <p>Choose your categories : </p>
@@ -193,6 +181,7 @@ include ('codephp/data.php');
 
             <a class="gotopbutton" href="#"><img src="./images/backtotop.png"></a>
         </main>
+        <script src="random.js"></script>
         <script src="modal.js"></script>
         <script src="gotopbutton.js"></script>
         <script src="voteButton.js"></script>
