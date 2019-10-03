@@ -1,0 +1,123 @@
+     /*			Licorn modifications on all modes			*/ 
+    body[data-theme='licorne'] {
+    cursor: url(images/licornev3.png),auto !important;
+    background: linear-gradient(234deg, #f47afb, #d1e818, #71e7f3, #ffffff);
+    background-size: 1100%;
+  
+    -webkit-animation: rainbow 10s ease infinite;
+    -z-animation: rainbow 10s ease infinite;
+    -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;}
+  
+    @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @keyframes rainbow { 
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+
+    nav[data-theme='licorne'] {
+        background-image: url("./images/unicornBanner.png");
+        border-bottom: solid 1px black;
+    } 
+ 
+    #logolink[data-theme='licorne'] {
+        color: rgb(149, 0, 146);
+    }
+
+    #h1reduced[data-theme='licorne'] {
+        color: rgb(149, 0, 146);
+    }
+
+/*  Licorn modifications - DESKTOP */
+
+@media screen and (min-width: 960px){
+  
+        #logolink[data-theme='licorne'] {
+            color: rgb(149, 0, 146);
+        }
+
+/*	Licorn Button on Desktop Mode			*/ 
+        #licornLabel {
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 52px;
+            height: 27px;
+            background: grey;
+            float: center;
+            border-radius: 100px;
+            position: relative;
+            
+        }
+        
+        #licornLabel:after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 90px;
+            transition: 0.3s;
+        }
+        
+        input:checked + #licornLabel {
+            background: var(--color-headings);
+        }
+        
+        input:checked + #licornLabel:after {
+            left: calc(100% - 5px);
+            transform: translateX(-100%);
+        }
+        
+        #licornLabel:active:after {
+            width: 45px;
+        }
+
+        .toggle-container {
+            background-color: white;
+            margin: 0 0 2rem 0;
+            padding: 0;
+            border-radius: 15px;
+            height: 100px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 80% auto;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "title switch"
+                "content content";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .toggle-container p {
+            margin: -12px;
+        }
+    
+        #switch{
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+}
+
+
+
+

@@ -74,6 +74,8 @@ nav {
     display: flex;
     align-items: center;
     width: 68%;
+    text-decoration: none;
+    color: #f2f2f2;
   }
   
   #logolink img {
@@ -94,11 +96,6 @@ nav {
     margin-left: 10px;
     margin-right: 2px;
     font-size: 200%;
-  }
-  
-  #logolink {
-    text-decoration: none;
-    color: #f2f2f2;
   }
   
   /*   nav   Search    */
@@ -222,5 +219,4 @@ nav {
         display: none;
     }
 
-      
 }

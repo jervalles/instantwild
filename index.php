@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <?php
 include ('header.html');
 include ('codephp/data.php');
@@ -23,10 +23,10 @@ include ('codephp/data.php');
                         <li>Most recent</li>
                         <li>Oldest</li>
                         <li>Random</li>
-                    </ul>
                 </div>
+                    </ul>
                 <!-- Instant Wild Logo and Title -->
-                <a href="index.html" id="logolink" title="Homepage">
+                <a href="index.php" id="logolink" title="Homepage">
                     <img src="./images/logo.png" alt="Logo Instant Wild">
                     <h1 id="h1reduced">IW</h1>
                     <h1 id="h1full">Instants Wild</h1>
@@ -55,13 +55,15 @@ include ('codephp/data.php');
                             <li>Oldest</li>
                             <li>Random</li>
                         </ul>
+                <!-- Licorn DesktopMode Toggle -->
+                <div class="toggle-container"><p>try me</p>
+                    <input type="checkbox" id="switch" name="theme" /><label id="licornLabel" for="switch">Toggle</label>
+                </div>
                 </div>
             </section>
             <section>
-
                 
                 <h2>Wild instant of the day :</h2>
-
 
                 <article>
                     
@@ -194,5 +196,6 @@ include ('codephp/data.php');
         <script src="modal.js"></script>
         <script src="gotopbutton.js"></script>
         <script src="voteButton.js"></script>
+        <script src="licorn.js"></script>
     </body>
 </html>

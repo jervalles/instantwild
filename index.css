@@ -107,7 +107,9 @@ hr{
 }
 
 @media screen and (min-width: 960px){
-/*			Left Menu			*/ 
+
+
+  /*			Left Menu			*/ 
   .leftMenuSection {
     width: 14%;
     display: flex;
@@ -171,5 +173,9 @@ hr{
 
   section {
     padding-top: 40px;
+  }
+
+  html {
+    --color-headings: #0077FF;
   }
 }
