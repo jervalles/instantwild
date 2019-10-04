@@ -30,6 +30,14 @@
         100%{background-position:0% 82%}
     }
 
+    html.transition,
+    html.transition *,
+    html.transition *:before,
+    html.transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+    }
+
     nav[data-theme='licorne'] {
         background-image: url("./images/unicornBanner.png");
         border-bottom: solid 1px black;
@@ -61,7 +69,6 @@
             float: center;
             border-radius: 100px;
             position: relative;
-            
         }
         
         #licornLabel:after {
@@ -91,10 +98,10 @@
 
         .toggle-container {
             background-color: white;
-            margin: 0 0 2rem 0;
+            margin: 0 0 4rem 0;
             padding: 0;
             border-radius: 15px;
-            height: 100px;
+            height: 80px;
             width: 100%;
             display: grid;
             grid-template-columns: 80% auto;
@@ -108,7 +115,7 @@
         }
     
         .toggle-container p {
-            margin: -12px;
+            
         }
     
         #switch{
